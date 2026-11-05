@@ -1,16 +1,32 @@
-RFS FRAGRANCES WEBSITE — UPDATED PACKAGE
+RFS FRAGRANCES — FINAL POLISHED WEBSITE PACKAGE
 
-Files:
-- index.html: homepage and collection grid
-- oud-e-asar.html, fitoor.html, marjaan.html, raaz.html, almas.html, ehsaas.html, naam.html, khaas.html: individual product pages
-- assets/: approved RFS logo and studio image
+Included files
+- index.html — homepage, brand introduction, Our Story, collection and contact
+- oud-e-asar.html, fitoor.html, marjaan.html, raaz.html, almas.html, ehsaas.html, naam.html, khaas.html — individual fragrance pages
+- assets/rfs-original-logo.png — approved RFS monogram used throughout the site
+- assets/rfs-studio.png — existing brand visual asset
 
-Open index.html to preview. Click any perfume card to open its individual page.
+Brand details retained
+- Brand name: RFS FRAGRANCES
+- Exact slogan: Your Fragrance Your Identity
+- Black and metallic-gold visual identity
+- Eight approved fragrance names and their inspiration references
+- WhatsApp: +923308191998
+- Existing Instagram, Facebook and TikTok destinations
 
-IMPORTANT CONTENT NOTES:
-- The 10+ hour wording is presented as a target, not a guarantee. Verify actual finished-batch performance before making a guaranteed longevity claim.
-- Ingredient section is a general formula-category description, not a verified full INCI/allergen list. Replace it with the actual supplier/formula documentation before publishing legally binding ingredient declarations.
-- Note pyramids are scent-profile descriptions of the inspiration references and may vary from the exact RFS compound supplied.
-- WhatsApp link is generic until the official RFS number is supplied.
+Quality checks
+- Checked local page and asset links for missing targets
+- Kept the original approved logo asset; no substitute logo
+- Improved mobile navigation, spacing, responsive type and keyboard focus visibility
+- Kept each fragrance's individual projection guide; removed the conflicting generic strong-projection chip
+- Kept the 10+ hours lasting claim while clarifying that actual wear can vary
+- Ingredient information remains a general category description, not a verified full INCI/allergen declaration; use the final supplier/formula documentation for legally required ingredient declarations
 
-Free hosting: upload the folder contents to a GitHub repository and enable GitHub Pages (Settings > Pages > Deploy from a branch > main / root).
+Deploy to GitHub Pages
+1. Extract this ZIP on your computer.
+2. Open your RFS-FRAGRANCES repository on GitHub.
+3. Upload/replace the files inside the extracted folder, including the assets folder. Do not upload the ZIP itself.
+4. Keep the assets folder structure intact.
+5. Commit the changes to the main branch. GitHub Pages will publish the updated site.
+
+Open index.html locally to preview the website before publishing.
