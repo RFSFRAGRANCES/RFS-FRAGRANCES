@@ -1,14 +1,30 @@
-RFS FRAGRANCES — FINAL POLISHED WEBSITE
+RFS FRAGRANCES — AUDITED WEBSITE PACKAGE
 
-UPLOAD CONTENTS OF THIS ZIP INTO THE ROOT OF YOUR EXISTING GitHub repository (RFS-FRAGRANCES), keeping the assets folder. Replace the existing files when GitHub asks.
+Upload all contents of this ZIP into the ROOT of the existing GitHub repository:
+RFS-FRAGRANCES (branch: main).
 
-IMPORTANT FILES
-- index.html (homepage)
-- almas.html, fitoor.html, oud-e-asar.html, raaz.html, khaas.html, ehsaas.html, marjaan.html, naam.html (8 fragrance pages)
-- rfs-original-logo.png (approved monogram, root copy)
-- assets/rfs-original-logo.png and assets/rfs-studio.png
+IMPORTANT:
+1. Extract this ZIP on your computer.
+2. Upload the files and folders inside it to the repository root.
+3. Replace existing files when prompted. Keep the assets folder.
+4. Commit changes, then allow GitHub Pages a few minutes to publish.
+5. Open the website and hard-refresh with Ctrl + F5.
 
-Keep all HTML files and the assets folder together in the repository root. Do not upload only the ZIP file itself.
+Main files:
+- index.html: homepage
+- almas.html, fitoor.html, marjaan.html, raaz.html, khaas.html,
+  ehsaas.html, naam.html, oud-e-asar.html: individual fragrance pages
+- rfs-original-logo.png: exact approved original monogram
+- assets/fragrance/*.webp: eight individual fragrance mood visuals
+- sitemap.xml and robots.txt: basic search-engine discovery files
 
-Brand text remains: RFS FRAGRANCES / Your Fragrance Your Identity.
-Hosting: GitHub Pages.
+Brand rules preserved:
+- RFS FRAGRANCES
+- Your Fragrance Your Identity
+- Black and metallic-gold visual identity
+- Existing fragrance names and article copy
+- Existing page URLs (important for already printed QR codes)
+
+The eight new fragrance visuals are atmospheric mood images for the website.
+They are not photographs of the actual physical bottles or labels.
+The exact approved logo file is retained separately and used by the website.

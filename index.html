@@ -1,14 +1,18 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#090909">
-<meta name="description" content="RFS Fragrances — Explore the RFS Fragrances collection and individual fragrance details.">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#090909" name="theme-color"/>
+<meta content="RFS Fragrances — Explore the RFS Fragrances collection and individual fragrance details." name="description"/>
 <title>RFS Fragrances | Your Fragrance Your Identity</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{--bg:#090909;--panel:#11110f;--gold:#c8a66a;--gold2:#e1c58e;--ivory:#f4efe5;--muted:#aaa398;--line:rgba(200,166,106,.24)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ivory);font-family:Manrope,Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.topline{height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
@@ -70,27 +74,41 @@ html,body{max-width:100%;overflow-x:hidden}.nav,.hero-inner,.wrap,section{min-wi
 .brand > span:last-child,.footer-brand{background:linear-gradient(180deg,#fff0b8 0%,#e7c66f 25%,#b7832f 52%,#f5dfa0 76%,#b98536 100%);background-clip:text;-webkit-background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent!important;text-shadow:0 2px 14px rgba(207,160,65,.18)}
 .hero-logo{width:150px!important;height:180px!important;max-width:100%;object-fit:contain}
 @media(max-width:800px){.hero-logo{width:150px!important;height:180px!important}}
+
+/* Final audited visual polish */
+:root{--gold:#c89b4e;--gold2:#f4d994}
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+.hero{background-image:linear-gradient(180deg,rgba(5,5,5,.68),rgba(5,5,5,.86)),url('assets/fragrance/almas.webp');background-size:cover;background-position:center 46%}
+.hero:before,.hero:after{pointer-events:none}
+.hero-logo{width:150px!important;height:180px!important;max-width:100%;object-fit:contain;filter:drop-shadow(0 0 22px rgba(232,184,91,.48))}
+.hero h1{background:linear-gradient(180deg,#fff3c4 0%,#e6bf65 28%,#a97528 53%,#f5df9e 78%,#a66f26 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;color:#e6bf65;text-shadow:0 3px 20px rgba(207,160,65,.22)}
+.brand > span:last-child{background:linear-gradient(180deg,#fff0b8 0%,#e7c66f 28%,#b7832f 55%,#f5dfa0 80%,#9a6b2d 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;color:#d6ad5d}
+.product{padding:12px 12px 20px;min-height:0;overflow:hidden;background:linear-gradient(145deg,#17130e,#080808);border-radius:3px}
+.product-image{display:block;width:100%;height:164px;object-fit:cover;border:1px solid rgba(214,173,93,.35);margin:0 0 14px;filter:saturate(.82) contrast(1.05)}
+.product h3{margin-top:2px}
+.product p{line-height:1.7}
+@media(max-width:800px){.hero-logo{width:150px!important;height:180px!important}.hero{min-height:590px;background-position:center}.hero-inner{padding:46px 18px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-image{height:145px}}
+@media(max-width:420px){.hero-logo{width:150px!important;height:180px!important}.hero h1{font-size:clamp(34px,9.4vw,44px);line-height:1.08}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.product-image{height:120px}.product{padding:9px 8px 15px}.product h3{font-size:20px}.product p{font-size:8px}}
 </style>
-</head>
+<meta content="RFS Fragrances | Your Fragrance Your Identity" property="og:title"/><meta content="Explore the RFS Fragrances collection of eight signature 35ml EDP fragrances." property="og:description"/><meta content="website" property="og:type"/><meta content="https://rfsfragrances.github.io/RFS-FRAGRANCES/" property="og:url"/><link href="rfs-original-logo.png" rel="icon" type="image/png"/></head>
 <body>
 <div class="topline"></div>
 <header><div class="nav">
 <a class="brand" href="#home">
-<img id="brandLogo" src="rfs-original-logo.png" alt="RFS original monogram" onerror="this.style.display='none';document.getElementById('fallbackMark').style.display='grid'">
-<span class="monogram" id="fallbackMark" style="display:none">RFS</span>
+<img alt="Approved original RFS Fragrances monogram" id="brandLogo" src="rfs-original-logo.png"/>
 <span>RFS FRAGRANCES</span></a>
-<button class="menu" id="menuBtn" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">MENU</button>
-<nav id="navLinks"><a href="#home">Home</a><a href="#collection">Collection</a><a href="#contact" class="nav-cta">Contact</a></nav>
+<button aria-controls="navLinks" aria-expanded="false" aria-label="Open menu" class="menu" id="menuBtn">MENU</button>
+<nav id="navLinks"><a href="#home">Home</a><a href="#collection">Collection</a><a class="nav-cta" href="#contact">Contact</a></nav>
 </div></header>
 <main>
 <section class="hero" id="home"><div class="hero-inner">
-<img class="hero-logo" src="rfs-original-logo.png" alt="RFS original monogram">
+<img alt="Approved original RFS Fragrances monogram" class="hero-logo" fetchpriority="high" height="180" src="rfs-original-logo.png" width="150"/>
 <h1>RFS FRAGRANCES</h1>
 <p class="hero-tagline">Your Fragrance Your Identity</p>
 <a class="btn" href="#collection">Discover the collection</a>
 </div></section>
 <section class="intro"><div class="wrap intro-grid">
-<div class="intro-image"><img src="rfs-original-logo.png" alt="RFS original monogram"></div>
+<div class="intro-image"><img alt="Approved original RFS Fragrances monogram" src="rfs-original-logo.png"/></div>
 <div class="intro-copy"><div class="eyebrow">About RFS Fragrances</div><h2>RFS Fragrances</h2>
 <p>RFS Fragrances is a fragrance brand created for people who express themselves through scent.</p>
 <p>Discover the fragrance that matches your identity.</p>
@@ -99,29 +117,26 @@ html,body{max-width:100%;overflow-x:hidden}.nav,.hero-inner,.wrap,section{min-wi
 <section class="story" id="story"><div class="wrap">
 <div class="section-head"><div class="eyebrow">The RFS Story</div><h2>Our Story</h2></div>
 <p style="max-width:760px;margin:28px auto 0;color:#b8b0a3;font-size:13px;line-height:2">RFS Fragrances was created around a simple belief: everyone deserves a fragrance that feels like their own. Our collection brings together distinct scent characters — from bold and warm to fresh, floral and refined — so you can choose the expression that matches your mood, style and identity. Every fragrance is presented with care, so you can choose a scent that feels like your own.</p>
-
 </div></section>
 <section class="collection" id="collection"><div class="wrap">
 <div class="section-head"><div class="eyebrow">Our Collection</div><h2>Find Your Fragrance</h2><p>Explore the RFS Fragrances collection.</p></div>
 <div class="products">
-<a class="product" href="oud-e-asar.html" aria-label="Explore OUD E ASAR"><div class="bottle"></div><h3>OUD E ASAR</h3><p>Bold · Warm · Magnetic</p></a>
-<a class="product" href="fitoor.html" aria-label="Explore FITOOR"><div class="bottle"></div><h3>FITOOR</h3><p>Fresh · Confident · Refined</p></a>
-<a class="product" href="marjaan.html" aria-label="Explore MARJAAN"><div class="bottle"></div><h3>MARJAAN</h3><p>Radiant · Rich · Charismatic</p></a>
-<a class="product" href="raaz.html" aria-label="Explore RAAZ"><div class="bottle"></div><h3>RAAZ</h3><p>Deep · Mysterious · Intense</p></a>
-<a class="product" href="almas.html" aria-label="Explore ALMAS"><div class="bottle"></div><h3>ALMAS</h3><p>Smoky · Smooth · Distinctive</p></a>
-<a class="product" href="ehsaas.html" aria-label="Explore EHSAAS"><div class="bottle"></div><h3>EHSAAS</h3><p>Floral · Soft · Elegant</p></a>
-<a class="product" href="naam.html" aria-label="Explore NAAM"><div class="bottle"></div><h3>NAAM</h3><p>Modern · Clean · Assured</p></a>
-<a class="product" href="khaas.html" aria-label="Explore KHAAS"><div class="bottle"></div><h3>KHAAS</h3><p>Bright · Vibrant · Unforgettable</p></a>
+<a aria-label="Explore OUD E ASAR" class="product" href="oud-e-asar.html"><img alt="OUD E ASAR fragrance mood visual" class="product-image" decoding="async" loading="lazy" src="assets/fragrance/oud-e-asar.webp"/><h3>OUD E ASAR</h3><p>Bold · Warm · Magnetic</p></a>
+<a aria-label="Explore FITOOR" class="product" href="fitoor.html"><img alt="FITOOR fragrance mood visual" class="product-image" decoding="async" loading="lazy" src="assets/fragrance/fitoor.webp"/><h3>FITOOR</h3><p>Fresh · Confident · Refined</p></a>
+<a aria-label="Explore MARJAAN" class="product" href="marjaan.html"><img alt="MARJAAN fragrance mood visual" class="product-image" decoding="async" loading="lazy" src="assets/fragrance/marjaan.webp"/><h3>MARJAAN</h3><p>Radiant · Rich · Charismatic</p></a>
+<a aria-label="Explore RAAZ" class="product" href="raaz.html"><img alt="RAAZ fragrance mood visual" class="product-image" decoding="async" loading="lazy" src="assets/fragrance/raaz.webp"/><h3>RAAZ</h3><p>Deep · Mysterious · Intense</p></a>
+<a aria-label="Explore ALMAS" class="product" href="almas.html"><img alt="ALMAS fragrance mood visual" class="product-image" decoding="async" loading="lazy" src="assets/fragrance/almas.webp"/><h3>ALMAS</h3><p>Smoky · Smooth · Distinctive</p></a>
+<a aria-label="Explore EHSAAS" class="product" href="ehsaas.html"><img alt="EHSAAS fragrance mood visual" class="product-image" decoding="async" loading="lazy" src="assets/fragrance/ehsaas.webp"/><h3>EHSAAS</h3><p>Floral · Soft · Elegant</p></a>
+<a aria-label="Explore NAAM" class="product" href="naam.html"><img alt="NAAM fragrance mood visual" class="product-image" decoding="async" loading="lazy" src="assets/fragrance/naam.webp"/><h3>NAAM</h3><p>Modern · Clean · Assured</p></a>
+<a aria-label="Explore KHAAS" class="product" href="khaas.html"><img alt="KHAAS fragrance mood visual" class="product-image" decoding="async" loading="lazy" src="assets/fragrance/khaas.webp"/><h3>KHAAS</h3><p>Bright · Vibrant · Unforgettable</p></a>
 </div>
 </div></section>
-
-
 <section class="contact" id="contact"><div class="contact-card"><div class="eyebrow">Stay connected</div><h2>Contact RFS Fragrances</h2><p>For collection enquiries, availability and brand updates, connect with RFS Fragrances.</p>
-<div class="contact-links"><a class="btn" href="https://wa.me/923308191998?text=Hello%20RFS%20Fragrances%2C%20I%27d%20like%20to%20know%20more%20about%20your%20collection." target="_blank" rel="noopener">WhatsApp Us</a><a class="btn" href="#collection">Explore Collection</a></div>
-<div class="rfs-social" aria-label="RFS Fragrances social media"><a href="https://www.instagram.com/rfsfragrances/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/19z6yWkh1d/" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/@rfs.fragrances" target="_blank" rel="noopener">TikTok</a></div>
+<div class="contact-links"><a class="btn" href="https://wa.me/923308191998?text=Hello%20RFS%20Fragrances%2C%20I%27d%20like%20to%20know%20more%20about%20your%20collection." rel="noopener" target="_blank">WhatsApp Us</a><a class="btn" href="#collection">Explore Collection</a></div>
+<div aria-label="RFS Fragrances social media" class="rfs-social"><a href="https://www.instagram.com/rfsfragrances/" rel="noopener" target="_blank">Instagram</a><a href="https://www.facebook.com/share/19z6yWkh1d/" rel="noopener" target="_blank">Facebook</a><a href="https://www.tiktok.com/@rfs.fragrances" rel="noopener" target="_blank">TikTok</a></div>
 </div></section>
 </main>
-<footer><div class="footer-brand">RFS FRAGRANCES</div><div class="rfs-social" aria-label="RFS Fragrances social media"><a href="https://www.instagram.com/rfsfragrances/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/19z6yWkh1d/" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/@rfs.fragrances" target="_blank" rel="noopener">TikTok</a></div><br><br>© <span id="year"></span> RFS Fragrances. All rights reserved.</footer>
+<footer><div class="footer-brand">RFS FRAGRANCES</div><div aria-label="RFS Fragrances social media" class="rfs-social"><a href="https://www.instagram.com/rfsfragrances/" rel="noopener" target="_blank">Instagram</a><a href="https://www.facebook.com/share/19z6yWkh1d/" rel="noopener" target="_blank">Facebook</a><a href="https://www.tiktok.com/@rfs.fragrances" rel="noopener" target="_blank">TikTok</a></div><br/><br/>© <span id="year"></span> RFS Fragrances. All rights reserved.</footer>
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
 const menu=document.getElementById('menuBtn'),nav=document.getElementById('navLinks');
