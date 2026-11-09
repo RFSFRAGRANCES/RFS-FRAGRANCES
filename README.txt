@@ -1,30 +1,38 @@
-RFS FRAGRANCES — AUDITED WEBSITE PACKAGE
+RFS FRAGRANCES — WEBSITE PACKAGE
 
-Upload all contents of this ZIP into the ROOT of the existing GitHub repository:
-RFS-FRAGRANCES (branch: main).
+Upload workflow (GitHub Pages):
+1. Open the repository root (the main Code page).
+2. Upload the files from this ZIP directly to the repository root.
+3. Do not create an assets or fragrance folder.
+4. Keep all filenames exactly as supplied.
 
-IMPORTANT:
-1. Extract this ZIP on your computer.
-2. Upload the files and folders inside it to the repository root.
-3. Replace existing files when prompted. Keep the assets folder.
-4. Commit changes, then allow GitHub Pages a few minutes to publish.
-5. Open the website and hard-refresh with Ctrl + F5.
+Root-level fragrance images:
+almas.webp
+fitoor.webp
+oud-e-asar.webp
+raaz.webp
+khaas.webp
+ehsaas.webp
+marjaan.webp
+naam.webp
 
-Main files:
-- index.html: homepage
-- almas.html, fitoor.html, marjaan.html, raaz.html, khaas.html,
-  ehsaas.html, naam.html, oud-e-asar.html: individual fragrance pages
-- rfs-original-logo.png: exact approved original monogram
-- assets/fragrance/*.webp: eight individual fragrance mood visuals
-- sitemap.xml and robots.txt: basic search-engine discovery files
+To replace a fragrance visual later, upload the original image using the exact same filename and choose Replace/Commit changes.
 
-Brand rules preserved:
-- RFS FRAGRANCES
-- Your Fragrance Your Identity
-- Black and metallic-gold visual identity
-- Existing fragrance names and article copy
-- Existing page URLs (important for already printed QR codes)
+Main pages:
+index.html
+almas.html
+fitoor.html
+oud-e-asar.html
+raaz.html
+khaas.html
+ehsaas.html
+marjaan.html
+naam.html
 
-The eight new fragrance visuals are atmospheric mood images for the website.
-They are not photographs of the actual physical bottles or labels.
-The exact approved logo file is retained separately and used by the website.
+Logo:
+rfs-original-logo.png (transparent background; original monogram geometry retained)
+favicon.png
+
+Keep the page filenames unchanged so existing QR-code URLs remain unchanged.
+Brand text: RFS FRAGRANCES
+Slogan: Your Fragrance Your Identity
