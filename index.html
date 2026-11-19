@@ -85,6 +85,16 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}
 .product p{line-height:1.7}
 @media(max-width:800px){.hero-logo{width:150px!important;height:180px!important}.hero{min-height:590px;background-position:center}.hero-inner{padding:46px 18px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-image{height:145px}}
 @media(max-width:420px){.hero-logo{width:150px!important;height:180px!important}.hero h1{font-size:clamp(34px,9.4vw,44px);line-height:1.08}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.product-image{height:120px}.product{padding:9px 8px 15px}.product h3{font-size:20px}.product p{font-size:8px}}
+
+/* Final image/card layout: all 8 collection entries visible and balanced */
+.products{grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch;gap:18px}
+.product{min-width:0;min-height:0;padding:15px 14px 18px;justify-content:flex-start}
+.product-image{width:100%;height:clamp(205px,22vw,270px);object-fit:contain;object-position:center;background:radial-gradient(ellipse at center,rgba(186,142,64,.12),transparent 65%),#080807;padding:4px;margin:0 0 14px;border:1px solid rgba(214,173,93,.35);filter:none}
+.product h3{line-height:1.15;min-height:1.15em}
+.product p{min-height:2.8em}
+@media(max-width:900px){.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.product-image{height:clamp(205px,34vw,270px)}}
+@media(max-width:480px){.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product{padding:9px 8px 14px}.product-image{height:clamp(165px,48vw,215px);padding:2px;margin-bottom:10px}.product h3{font-size:clamp(17px,5vw,21px);letter-spacing:.08em}.product p{font-size:8px;min-height:2.7em}}
+
 </style>
 <meta content="RFS Fragrances | Your Fragrance Your Identity" property="og:title"/><meta content="Explore the RFS Fragrances collection of eight signature 35ml EDP fragrances." property="og:description"/><meta content="website" property="og:type"/><meta content="https://rfsfragrances.github.io/RFS-FRAGRANCES/" property="og:url"/><link rel="icon" type="image/png" href="favicon.png"/>
 </head>
