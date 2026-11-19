@@ -74,8 +74,11 @@ html,body{max-width:100%;overflow-x:hidden}.nav,.hero-inner,.wrap,section{min-wi
 /* Final audited visual polish */
 :root{--gold:#c89b4e;--gold2:#f4d994}
 html,body{width:100%;max-width:100%;overflow-x:hidden}
-.hero{background-image:linear-gradient(180deg,rgba(5,5,5,.58),rgba(5,5,5,.78)),url('collection-cover.webp');background-size:cover;background-position:center 46%}
-.hero:before,.hero:after{pointer-events:none}
+.hero{background:#090909!important;min-height:0;display:block;padding:0}
+.hero:before,.hero:after{display:none}
+.hero-inner{max-width:none;width:100%;padding:0;display:block}
+.cover-banner{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center}
+.cover-action{padding:22px 12px 30px;text-align:center;background:#090909}
 .hero-logo{width:150px!important;height:180px!important;max-width:100%;object-fit:contain;filter:drop-shadow(0 0 22px rgba(232,184,91,.48))}
 .hero h1{background:linear-gradient(180deg,#fff3c4 0%,#e6bf65 28%,#a97528 53%,#f5df9e 78%,#a66f26 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;color:#e6bf65;text-shadow:0 3px 20px rgba(207,160,65,.22)}
 .brand > span:last-child{background:linear-gradient(180deg,#fff0b8 0%,#e7c66f 28%,#b7832f 55%,#f5dfa0 80%,#9a6b2d 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;color:#d6ad5d}
@@ -83,7 +86,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}
 .product-image{display:block;width:100%;height:164px;object-fit:cover;border:1px solid rgba(214,173,93,.35);margin:0 0 14px;filter:saturate(.82) contrast(1.05)}
 .product h3{margin-top:2px}
 .product p{line-height:1.7}
-@media(max-width:800px){.hero-logo{width:150px!important;height:180px!important}.hero{min-height:590px;background-position:center}.hero-inner{padding:46px 18px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-image{height:145px}}
+@media(max-width:800px){.hero-logo{width:150px!important;height:180px!important}.hero{min-height:0}.hero-inner{padding:0}.cover-action{padding:18px 10px 24px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-image{height:145px}}
 @media(max-width:420px){.hero-logo{width:150px!important;height:180px!important}.hero h1{font-size:clamp(34px,9.4vw,44px);line-height:1.08}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.product-image{height:120px}.product{padding:9px 8px 15px}.product h3{font-size:20px}.product p{font-size:8px}}
 </style>
 <meta content="RFS Fragrances | Your Fragrance Your Identity" property="og:title"/><meta content="Explore the RFS Fragrances collection of eight signature 35ml EDP fragrances." property="og:description"/><meta content="website" property="og:type"/><meta content="https://rfsfragrances.github.io/RFS-FRAGRANCES/" property="og:url"/><link rel="icon" type="image/png" href="favicon.png"/>
@@ -139,10 +142,3 @@ menu.addEventListener('click',()=>{const isOpen=nav.classList.toggle('open');men
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open menu');menu.textContent='MENU'}));
 </script>
 </body></html>
-/* Homepage cover: show the supplied collection artwork as a full banner, without cropping. */
-.hero{min-height:0;display:block;background:#090909!important;padding:0}
-.hero:before,.hero:after{display:none}
-.hero-inner{max-width:none;width:100%;padding:0;display:block}
-.cover-banner{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center}
-.cover-action{padding:22px 12px 30px;text-align:center;background:#090909}
-@media(max-width:800px){.hero{min-height:0}.hero-inner{padding:0}.cover-action{padding:18px 10px 24px}}
